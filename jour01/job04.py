@@ -8,7 +8,7 @@ class Personne:
 
 Hugo = Personne("Hugo", "ESQUER")
 Tom = Personne("Tom", "CLAVIS")
-Val = Personne("Valentin", "BEAUSAERT")
+Val = Personne("Valentin", "BEAUSSAERT")
 
 print(f"Je suis {Hugo.SePresenter()}")
 print(f"Je suis {Tom.SePresenter()}")
