@@ -30,7 +30,7 @@ class Livre:
             return False
     
     def emprunter(self):
-        if self.__disponible:
+        if self.verification():
             self.__disponible = False
         else:
             print("Le livre n'est pas disponible")
