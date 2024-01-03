@@ -16,7 +16,7 @@ class Livre:
     def set_auteur(self, auteur):
         self.__auteur = auteur
     def set_pages(self, pages):
-        if type(pages) == int :
+        if type(pages) == int and pages >= 0 :
             self.__pages = pages
         else:
             print("mauvais type")
@@ -31,3 +31,4 @@ LSDA.set_pages(597)
 print(LSDA.get_auteur())
 print(LSDA.get_titre())
 print(LSDA.get_pages())
+LSDA.set_pages(-34)
