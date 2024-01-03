@@ -33,6 +33,8 @@ class Voiture:
     def demarrer(self):
         if self.__verifier_plein() > 5:
             self.__en_marche = True
+        else:
+            print("pas assez d'essence")
     def arreter(self):
         self.__en_marche = False
 
