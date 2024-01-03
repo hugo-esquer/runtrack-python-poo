@@ -36,7 +36,7 @@ class Livre:
             print("Le livre n'est pas disponible")
 
     def rendre(self):
-        if not self.__disponible:
+        if not self.verification():
             self.__disponible = True
         else:
             print("Le livre est disponible")
