@@ -22,7 +22,7 @@ class Eleve(Personne):
 class Professeur(Personne):
     def __init__(self, age, matiereEnseignee):
         Personne.__init__(self, age)
-        self.matiereEnseignee = matiereEnseignee
+        self.__matiereEnseignee = matiereEnseignee
 
     def enseigner(self):
         print("Le cours va commencer")
